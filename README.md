@@ -80,7 +80,8 @@ O Android Studio cuidará disso automaticamente ao abrir o projeto.
 
 ### 4. Rode o app em um dispositivo físico ou emulador
 
+---
 
-👨‍💻 Autor
+👨‍💻 Autor:
 Pedro Sena
 

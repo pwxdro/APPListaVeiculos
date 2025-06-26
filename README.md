@@ -18,7 +18,6 @@ Aplicativo Android desenvolvido em Kotlin para exibir uma lista de veículos obt
 - 🔍 Tela de detalhes do veículo
 - 💾 Persistência local offline com Room
 - 📶 Detecção de conexão: mostra mensagem se estiver sem internet na 1ª execução
-- 🌀 Splash screen personalizada com ícone
 - 🔄 Indicador de carregamento (ProgressBar)
 
 ---

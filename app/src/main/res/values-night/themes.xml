@@ -2,6 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.APPListaVeiculos" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">#223344</item> <!-- azul escuro, por exemplo -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- texto claro na toolbar -->
+        <!-- outras customizações -->
     </style>
 </resources>

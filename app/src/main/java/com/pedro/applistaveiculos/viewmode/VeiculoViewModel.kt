@@ -6,13 +6,12 @@ import com.pedro.applistaveiculos.data.repository.VeiculoRepository
 import kotlinx.coroutines.launch
 import android.util.Log
 
+class VeiculoViewModel(
+    private val repository: VeiculoRepository
+) : ViewModel() {
 
-class VeiculoViewModel : ViewModel() {
-
-    private val repository = VeiculoRepository()
-
-    private val veiculos = MutableLiveData<List<Veiculo>>()
-    val vehicles: LiveData<List<Veiculo>> = veiculos
+    private val _veiculos = MutableLiveData<List<Veiculo>>()
+    val vehicles: LiveData<List<Veiculo>> = _veiculos
 
     init {
         fetchVeiculos()
@@ -22,7 +21,7 @@ class VeiculoViewModel : ViewModel() {
         viewModelScope.launch {
             try {
                 val list = repository.getVeiculos()
-                veiculos.postValue(list)
+                _veiculos.postValue(list)
             } catch (e: Exception) {
                 Log.e("VeiculoViewModel", "Erro ao buscar veículos", e)
             }

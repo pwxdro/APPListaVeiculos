@@ -5,6 +5,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.pedro.applistaveiculos.R
 import com.pedro.applistaveiculos.data.DTOs.Veiculo
 
@@ -12,6 +13,9 @@ class DetalhesVeiculoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalhes_veiculo)
+
+
+
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)  // Note: androidx.appcompat.widget.Toolbar
         setSupportActionBar(toolbar)

@@ -2,7 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.APPListaVeiculos" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#ADD8E6</item> <!-- azul bebê -->
+        <item name="colorOnPrimary">#000000</item> <!-- texto escuro na toolbar -->
+        <item name="android:statusBarColor">#ADD8E6</item> <!-- status bar azul claro -->
     </style>
 
     <style name="Theme.APPListaVeiculos" parent="Base.Theme.APPListaVeiculos" />

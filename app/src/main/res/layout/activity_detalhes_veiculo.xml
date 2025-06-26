@@ -1,88 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
-        android:id="@+id/main"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@android:drawable/ic_menu_revert">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="-60dp"
+            android:gravity="center"
+            android:text="Detalhes do Veículo"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+        android:padding="16dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
             android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:navigationIcon="@android:drawable/ic_menu_revert">
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp">
 
-
-            <TextView
-                android:id="@+id/toolbar_title"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Detalhes do Veículos"
-                android:gravity="center"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
-        </androidx.appcompat.widget.Toolbar>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/textPlaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Placa: ABC1234"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp" />
 
+                <TextView
+                    android:id="@+id/textMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Marca: Toyota"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp" />
 
-        <TextView
-            android:id="@+id/textPlaca"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textModelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Modelo: Corolla"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"/>
 
-        <TextView
-            android:id="@+id/textMarca"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textAno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ano: 2020"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"/>
 
-        <TextView
-            android:id="@+id/textModelo"
-            android:textSize="18sp"
-            android:layout_marginTop="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textCor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cor: Prata"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"/>
 
-        <TextView
-            android:id="@+id/textAno"
-            android:textSize="18sp"
-            android:layout_marginTop="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textRenavam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Renavam: 123456789"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"/>
 
-        <TextView
-            android:id="@+id/textCor"
-            android:textSize="18sp"
-            android:layout_marginTop="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textChassi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chassi: XXXXXXXXXXXXX"
+                    android:textSize="18sp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
 
-        <TextView
-            android:id="@+id/textRenavam"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/textChassi"
-            android:textSize="18sp"
-            android:layout_marginTop="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

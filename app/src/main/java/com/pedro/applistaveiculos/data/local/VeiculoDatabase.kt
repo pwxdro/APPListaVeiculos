@@ -10,6 +10,9 @@ import com.pedro.applistaveiculos.data.DTOs.Veiculo
 abstract class VeiculoDatabase : RoomDatabase() {
     abstract fun veiculoDao(): VeiculoDao
 
+    /**
+     * Instancia da DB utilizando o ROOM
+     */
     companion object {
         @Volatile
         private var INSTANCE: VeiculoDatabase? = null

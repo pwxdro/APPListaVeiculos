@@ -6,6 +6,14 @@ import com.pedro.applistaveiculos.data.repository.VeiculoRepository
 import kotlinx.coroutines.launch
 import android.util.Log
 
+/**
+ *
+ *   ViewModel responsável por gerenciar os dados da lista de veículos.
+ *
+ *   Ele busca os dados do repositório (API ou banco local), armazena no LiveData,
+ *   e expõe para a UI de forma reativa.
+ *
+ */
 class VeiculoViewModel(
     private val repository: VeiculoRepository
 ) : ViewModel() {

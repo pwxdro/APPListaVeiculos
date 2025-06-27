@@ -9,6 +9,10 @@ import androidx.core.content.ContextCompat
 import com.pedro.applistaveiculos.R
 import com.pedro.applistaveiculos.data.DTOs.Veiculo
 
+/**
+ * Tela de detalhes dos veiculos
+ * No onCreate é inserida a toolbar no topo da tela e apartir do objeto veiculo os dados são inseridos nas textviews
+ */
 class DetalhesVeiculoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

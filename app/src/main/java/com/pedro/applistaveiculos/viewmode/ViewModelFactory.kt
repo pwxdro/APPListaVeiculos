@@ -4,6 +4,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.pedro.applistaveiculos.data.repository.VeiculoRepository
 
+/**
+ *
+ *   Fábrica de ViewModel customizada para criar instâncias de [VeiculoViewModel]
+ *   com o repositório injetado via construtor.
+ *
+ *  Necessário quando o ViewModel precisa de dependências externas.
+ */
 class VeiculoViewModelFactory(
     private val repository: VeiculoRepository
 ) : ViewModelProvider.Factory {

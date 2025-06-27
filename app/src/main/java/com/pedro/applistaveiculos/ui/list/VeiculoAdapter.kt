@@ -8,6 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.pedro.applistaveiculos.R
     import com.pedro.applistaveiculos.data.DTOs.Veiculo
 
+/**
+ * funções do adapter para popular os dados no recycleView
+ *
+ */
 class VehicleAdapter(
     private var vehicles: List<Veiculo>,
     private val onItemClick: (Veiculo) -> Unit

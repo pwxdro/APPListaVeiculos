@@ -22,9 +22,14 @@ import com.pedro.applistaveiculos.ui.details.DetalhesVeiculoActivity
 import com.pedro.applistaveiculos.viewmode.VeiculoViewModel
 import com.pedro.applistaveiculos.viewmode.VeiculoViewModelFactory
 
+/**
+ * Activity inicial do APP
+ * são instanciados as propriedades do layout
+ * e populado o recyclerView a partir do adapter
+ */
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: VeiculoViewModel // tiramos o 'by viewModels'
+    private lateinit var viewModel: VeiculoViewModel
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: VehicleAdapter
     private lateinit var drawerLayout: DrawerLayout
